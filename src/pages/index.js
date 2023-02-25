@@ -37,13 +37,31 @@ export default function Home() {
               Wide range of sunglasses<br></br> and frames from world brands
             </div>
             <button className={styles.typographyleftcontent}>
-              CATALOG &nbsp;→
+              CATALOG &nbsp;⟶
             </button>
           </div>
-          <div className={styles.scrolldown}> SCROLL DOWN → </div>
+          <div className={styles.scrolldown}> SCROLL DOWN ⟶ </div>
         </div>
       </div>
-      <div> ASDASSDASSD </div>
+      <div>
+        {" "}
+        ASDASSDASSD <br></br>
+        ASDASSDASSD <br></br>
+        ASDASSDASSD <br></br>
+        ASDASSDASSD <br></br>
+        ASDASSDASSD <br></br>
+        ASDASSDASSD <br></br>
+        ASDASSDASSD <br></br>
+        ASDASSDASSD <br></br>
+        ASDASSDASSD <br></br>
+        ASDASSDASSD <br></br>
+        ASDASSDASSD <br></br>
+        ASDASSDASSD <br></br>
+        ASDASSDASSD <br></br>
+        ASDASSDASSD <br></br>
+        ASDASSDASSD <br></br>
+        ASDASSDASSD <br></br>
+      </div>
     </>
   );
 }

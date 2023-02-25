@@ -10,24 +10,37 @@
   flex-direction: column;
   position: relative;
 }
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  backdrop-filter: brightness(70%);
+}
+
 .menubutton {
   justify-self: flex-start;
 }
 .logo {
+  font-size: 3rem;
   justify-self: center;
 }
 .nav {
+  z-index: 4;
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 33.33%;
-  padding: 0rem 0 0 0;
-  font-size: 2rem;
+  padding: 1rem 0 0 0;
 }
 .navright {
   display: flex;
   justify-self: flex-end;
 }
 .typography {
+  z-index: 4;
   margin-block: auto;
   font-family: arial-monospace;
 }
@@ -36,6 +49,9 @@
   font-size: 1.2rem;
   padding-block: 1rem;
   padding-inline: 1.2rem;
+  background-color: white;
+  border: none;
+  cursor: pointer;
 }
 .typographyleft {
   margin-block: auto;
@@ -50,6 +66,7 @@
   font-size: 6rem;
 }
 .scrolldown {
+  color: bisque;
   position: absolute;
   right: 0rem;
   top: 50%;
