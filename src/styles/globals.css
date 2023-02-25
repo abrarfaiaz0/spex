@@ -1,3 +1,15 @@
+@font-face {
+  font-family: meltow-sans;
+  src: url("../../public/assets/fonts/MeltowSan200-Regular.ttf");
+}
+
+@font-face {
+  font-family: arial-monospace;
+  src: url("../../public/assets/fonts/arial_monospaced_mt.ttf");
+}
 body {
   margin: 0;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
