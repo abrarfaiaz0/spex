@@ -14,7 +14,35 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.hero}></div>
+      <div className={styles.hero}>
+        <nav className={styles.nav}>
+          <div className={styles.menubutton}>
+            <button>=</button>
+          </div>
+          <div className={styles.logo}>
+            <a>spex.</a>
+          </div>
+          <div className={styles.navright}>
+            <div>a</div>
+            <div>b</div>
+            <div>cadadaddassd</div>
+          </div>
+        </nav>
+        <div className={styles.typography}>
+          <div className={styles.typographyleft}>
+            <div className={styles.typographyleftcontent}>
+              GALLERY<br></br>&nbsp;&nbsp;&nbsp;OPTICIAN
+            </div>
+            <div className={styles.typographyleftcontent}>
+              Wide range of sunglasses<br></br> and frames from world brands
+            </div>
+            <button className={styles.typographyleftcontent}>
+              CATALOG &nbsp;→
+            </button>
+          </div>
+          <div className={styles.scrolldown}> SCROLL DOWN → </div>
+        </div>
+      </div>
       <div> ASDASSDASSD </div>
     </>
   );
