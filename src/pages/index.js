@@ -4,7 +4,9 @@ import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import newsection from "@/styles/New.module.css";
 import herosection from "@/styles/Hero.module.css";
+import brands from "@/styles/Brands.module.css";
 import Productcard from "@/components/Productcard";
+import Brands from "@/components/Brands";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +19,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className={herosection.hero}>
+      <section className={styles.herosection}>
         <nav className={herosection.nav}>
           <div className={herosection.menubutton}>
             <button>=</button>
@@ -48,7 +50,7 @@ export default function Home() {
           <div className={herosection.scrolldown}> SCROLL DOWN ⟶ </div>
         </div>
       </section>
-      <section className={newsection.newsection}>
+      <section className={styles.newsection}>
         <div className={styles.title}>
           WHAT&apos;S NEW
           <a className={styles.explore} href="#">
@@ -61,8 +63,17 @@ export default function Home() {
           <Productcard />
         </div>
       </section>
-      <section className={styles.brandssection}></section>
-      <section className={styles.collectionsection}></section>
+      <section className={styles.brandssection}>
+        <div className={styles.title}>BRANDS</div>
+        <Brands />
+        <a className={styles.explore} href="#">
+          ALL BRANDS ⟶{" "}
+        </a>
+      </section>
+
+      <section className={styles.collectionsection}>
+        <div className={styles.title}>COLLECTION</div>
+      </section>
       <section className={styles.findussection}></section>
       <section className={styles.instagramsection}></section>
       <footer>asdasd</footer>

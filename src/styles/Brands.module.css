@@ -1,0 +1,15 @@
+.brands {
+  padding-top: 4rem;
+  display: grid;
+  grid-auto-columns: 20%;
+  grid-template-areas: "a a a a a";
+  grid-auto-rows: 200px;
+}
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand img {
+  width: 60%;
+}

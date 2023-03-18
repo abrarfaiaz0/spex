@@ -4,29 +4,6 @@
   color: white;
   position: relative;
 }
-.hero {
-  min-height: 100vh;
-  background: url("../../public/assets/hero.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: top 20% left 0;
-  padding-inline: 5rem;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  font-family: arial-monospace;
-}
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  backdrop-filter: brightness(70%);
-}
 .menubutton {
   justify-self: flex-start;
 }

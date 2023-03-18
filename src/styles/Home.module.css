@@ -9,3 +9,54 @@
   color: #a5a5a6;
   cursor: pointer;
 }
+.herosection {
+  min-height: 100vh;
+  background: url("../../public/assets/hero.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top 20% left 0;
+  padding-inline: 5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: arial-monospace;
+}
+.herosection::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  backdrop-filter: brightness(70%);
+}
+.newsection {
+  padding-top: 8rem;
+  padding-inline: 5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.newsection a {
+  font-size: 1rem;
+  position: absolute;
+  right: 0rem;
+  bottom: 1rem;
+}
+.brandssection {
+  padding-top: 8rem;
+  padding-inline: 5rem;
+}
+.brandssection a {
+  font-size: 1rem;
+  right: 0rem;
+  position: absolute;
+  padding-right: 5rem;
+  padding-top: 1rem;
+}
+.collectionsection {
+  padding-top: 8rem;
+  padding-inline: 5rem;
+}
