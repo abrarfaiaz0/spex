@@ -7,4 +7,5 @@
 .explore {
   all: unset;
   color: #a5a5a6;
+  cursor: pointer;
 }

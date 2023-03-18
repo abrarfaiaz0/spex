@@ -9,6 +9,7 @@
 }
 body {
   margin: 0;
+  font-family: arial-monospace;
 }
 body::-webkit-scrollbar {
   display: none;

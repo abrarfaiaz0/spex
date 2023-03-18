@@ -1,5 +1,5 @@
 .newsection {
-  padding-top: 7rem;
+  padding-top: 8rem;
   padding-inline: 5rem;
   display: flex;
   flex-direction: column;
@@ -15,5 +15,5 @@
   padding-top: 4rem;
   display: flex;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 2rem;
 }
