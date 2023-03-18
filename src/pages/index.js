@@ -4,11 +4,10 @@ import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import newsection from "@/styles/New.module.css";
 import herosection from "@/styles/Hero.module.css";
-import brands from "@/styles/Brands.module.css";
+import collectionsection from "@/styles/Collections.module.css";
 import Productcard from "@/components/Productcard";
 import Brands from "@/components/Brands";
-
-const inter = Inter({ subsets: ["latin"] });
+import Collectioncard from "@/components/Collectioncard";
 
 export default function Home() {
   return (
@@ -73,6 +72,12 @@ export default function Home() {
 
       <section className={styles.collectionsection}>
         <div className={styles.title}>COLLECTION</div>
+        <div className={collectionsection.collections}>
+          <Collectioncard />
+          <Collectioncard />
+          <Collectioncard />
+        </div>
+        <div className={collectionsection.drag}>DRAG TO SEE MORE</div>
       </section>
       <section className={styles.findussection}></section>
       <section className={styles.instagramsection}></section>

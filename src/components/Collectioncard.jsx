@@ -5,13 +5,11 @@ function Collectioncard(props) {
   const price = props.price;
   return (
     <div className={styles.card}>
+      <div className={styles.number}>001</div>
       <div className={styles.image}>
-        <img src="assets/p1.png" alt="product"></img>
+        <img src="assets/col.jpg" alt="product"></img>
       </div>
-      <div className={styles.info}>
-        <span className={styles.name}>GUCCI-02U</span>
-        <span className={styles.price}>1400 USD</span>
-      </div>
+      <div className={styles.name}>CARTIER COLLECTION</div>
     </div>
   );
 }
