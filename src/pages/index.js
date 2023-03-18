@@ -2,6 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
+import newsection from "@/styles/New.module.css";
+import herosection from "@/styles/Hero.module.css";
 import Productcard from "@/components/Productcard";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,43 +17,55 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.hero}>
-        <nav className={styles.nav}>
-          <div className={styles.menubutton}>
+      <section className={herosection.hero}>
+        <nav className={herosection.nav}>
+          <div className={herosection.menubutton}>
             <button>=</button>
           </div>
-          <div className={styles.logo}>
+          <div className={herosection.logo}>
             <a>spex.</a>
           </div>
-          <div className={styles.navright}>
+          <div className={herosection.navright}>
             <div>a</div>
             <div>b</div>
             <div>cadadaddassd</div>
           </div>
         </nav>
-        <div className={styles.typography}>
-          <div className={styles.typographyleft}>
-            <div className={styles.typographyleftcontent}>
-              GALLERY<br></br>&nbsp;&nbsp;&nbsp;OPTICIAN
+        <div className={herosection.typography}>
+          <div className={herosection.typographyleft}>
+            <div className={herosection.typographyleftcontent}>
+              <div className={herosection.herotitle}>
+                GALLERY<br></br>&nbsp;&nbsp;&nbsp;OPTICIAN
+              </div>
             </div>
-            <div className={styles.typographyleftcontent}>
+            <div className={herosection.typographyleftcontent}>
               Wide range of sunglasses<br></br> and frames from world brands
             </div>
-            <button className={styles.typographyleftcontent}>
+            <button className={herosection.typographyleftcontent}>
               CATALOG &nbsp;⟶
             </button>
           </div>
-          <div className={styles.scrolldown}> SCROLL DOWN ⟶ </div>
+          <div className={herosection.scrolldown}> SCROLL DOWN ⟶ </div>
         </div>
-      </div>
-      <div className={styles.newsection}>
-        <div>WHAT'S NEW</div>
-        <div>
+      </section>
+      <section className={newsection.newsection}>
+        <div className={styles.title}>
+          WHAT&apos;S NEW
+          <a className={styles.explore} href="#">
+            VIEW MORE ⟶{" "}
+          </a>
+        </div>
+        <div className={newsection.new}>
           <Productcard />
           <Productcard />
           <Productcard />
         </div>
-      </div>
+      </section>
+      <section className={styles.brandssection}></section>
+      <section className={styles.collectionsection}></section>
+      <section className={styles.findussection}></section>
+      <section className={styles.instagramsection}></section>
+      <footer>asdasd</footer>
     </>
   );
 }
