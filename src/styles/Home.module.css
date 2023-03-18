@@ -1,74 +1,10 @@
-.hero {
-  min-height: 100vh;
-  background: url("../../public/assets/hero.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: top 20% left 0;
-  padding-inline: 5rem;
-  color: white;
-  display: flex;
-  flex-direction: column;
+.title {
+  font-size: 6rem;
+  font-family: arial-monospace;
+  color: #101012;
   position: relative;
 }
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  backdrop-filter: brightness(70%);
-}
-
-.menubutton {
-  justify-self: flex-start;
-}
-.logo {
-  font-size: 3rem;
-  justify-self: center;
-}
-.nav {
-  z-index: 4;
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 33.33%;
-  padding: 1rem 0 0 0;
-}
-.navright {
-  display: flex;
-  justify-self: flex-end;
-}
-.typography {
-  z-index: 4;
-  margin-block: auto;
-  font-family: arial-monospace;
-}
-.typography button {
-  font-family: meltow-sans;
-  font-size: 1.2rem;
-  padding-block: 1rem;
-  padding-inline: 1.2rem;
-  background-color: white;
-  border: none;
-  cursor: pointer;
-}
-.typographyleft {
-  margin-block: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.typographyleftcontent {
-  margin-block: 2rem;
-}
-.typographyleft > :nth-child(1) {
-  font-size: 6rem;
-}
-.scrolldown {
-  color: bisque;
-  position: absolute;
-  right: 0rem;
-  top: 50%;
-  transform: rotate(90deg);
+.explore {
+  all: unset;
+  color: #a5a5a6;
 }
