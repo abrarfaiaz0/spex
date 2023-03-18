@@ -1,0 +1,14 @@
+.collections {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  gap: 2rem;
+}
+.drag {
+  margin-top: 1.5rem;
+  font-size: 3rem;
+  color: #a5a5a6;
+  position: absolute;
+  right: 5rem;
+}

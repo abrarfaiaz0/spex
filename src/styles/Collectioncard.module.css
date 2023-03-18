@@ -1,0 +1,14 @@
+.card {
+  width: 100%;
+}
+.image img {
+  padding-top: 0.5rem;
+  width: 100%;
+}
+.number {
+  font-weight: 600;
+}
+.name {
+  font-weight: 600;
+  padding-top: 0.5rem;
+}
