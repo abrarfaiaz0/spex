@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
+import Productcard from "@/components/Productcard";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,24 +44,13 @@ export default function Home() {
           <div className={styles.scrolldown}> SCROLL DOWN ⟶ </div>
         </div>
       </div>
-      <div>
-        {" "}
-        ASDASSDASSD <br></br>
-        ASDASSDASSD <br></br>
-        ASDASSDASSD <br></br>
-        ASDASSDASSD <br></br>
-        ASDASSDASSD <br></br>
-        ASDASSDASSD <br></br>
-        ASDASSDASSD <br></br>
-        ASDASSDASSD <br></br>
-        ASDASSDASSD <br></br>
-        ASDASSDASSD <br></br>
-        ASDASSDASSD <br></br>
-        ASDASSDASSD <br></br>
-        ASDASSDASSD <br></br>
-        ASDASSDASSD <br></br>
-        ASDASSDASSD <br></br>
-        ASDASSDASSD <br></br>
+      <div className={styles.newsection}>
+        <div>WHAT'S NEW</div>
+        <div>
+          <Productcard />
+          <Productcard />
+          <Productcard />
+        </div>
       </div>
     </>
   );
