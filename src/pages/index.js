@@ -5,6 +5,8 @@ import styles from "@/styles/Home.module.css";
 import newsection from "@/styles/New.module.css";
 import herosection from "@/styles/Hero.module.css";
 import collectionsection from "@/styles/Collections.module.css";
+import findussection from "@/styles/Findus.module.css";
+
 import Productcard from "@/components/Productcard";
 import Brands from "@/components/Brands";
 import Collectioncard from "@/components/Collectioncard";
@@ -57,9 +59,9 @@ export default function Home() {
           </a>
         </div>
         <div className={newsection.new}>
-          <Productcard />
-          <Productcard />
-          <Productcard />
+          <Productcard number="1" />
+          <Productcard number="2" />
+          <Productcard number="3" />
         </div>
       </section>
       <section className={styles.brandssection}>
@@ -73,13 +75,43 @@ export default function Home() {
       <section className={styles.collectionsection}>
         <div className={styles.title}>COLLECTION</div>
         <div className={collectionsection.collections}>
-          <Collectioncard />
-          <Collectioncard />
-          <Collectioncard />
+          <Collectioncard number="1" />
+          <Collectioncard number="2" />
+          <Collectioncard number="3" />
         </div>
         <div className={collectionsection.drag}>DRAG TO SEE MORE</div>
       </section>
-      <section className={styles.findussection}></section>
+      <section className={styles.findussection}>
+        <div>
+          <img src="assets/shelf.jpg"></img>
+        </div>
+        <div className={styles.title}>
+          <div>
+            HOW TO
+            <br></br>
+            &nbsp;&nbsp;&nbsp;FIND US
+          </div>
+          <div className={findussection.buttons}>
+            <button>
+              <span>KIEV</span>
+              <span>⟶</span>
+            </button>
+            <button>
+              <span>ODESSA</span>
+              <span>⟶</span>
+            </button>
+            <button>
+              <span>KHARKIV</span>
+              <span>⟶</span>
+            </button>
+            <button>
+              <span>DNIPRO</span>
+              <span>⟶</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
       <section className={styles.instagramsection}></section>
       <footer>asdasd</footer>
     </>
