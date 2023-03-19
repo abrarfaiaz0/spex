@@ -8,12 +8,13 @@
 .buttons button {
   font-family: arial-monospace;
   font-size: 1.2rem;
+  font-weight: 600;
   padding-block: 1rem;
-  padding-inline: 1.2rem;
+  padding-inline: 2rem;
   background-color: #eaeaea;
   border: none;
   cursor: pointer;
   width: 15rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }

@@ -1,0 +1,48 @@
+.footer {
+  padding-inline: 5rem;
+  padding-block: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-weight: 600;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer > :nth-child(4) {
+  text-align: right;
+}
+.logo {
+  font-size: 5rem;
+  margin-bottom: auto;
+}
+.medias {
+  margin-top: auto;
+}
+.footer a {
+  color: black;
+  all: unset;
+  cursor: pointer;
+}
+.footer a:hover {
+  color: rgb(119, 119, 119);
+}
+.form {
+  position: relative;
+}
+.form input {
+  all: unset;
+  min-width: 100%;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+.form button {
+  all: unset;
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
+  cursor: pointer;
+}
