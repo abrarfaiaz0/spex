@@ -6,6 +6,8 @@ import newsection from "@/styles/New.module.css";
 import herosection from "@/styles/Hero.module.css";
 import collectionsection from "@/styles/Collections.module.css";
 import findussection from "@/styles/Findus.module.css";
+import instagramsection from "@/styles/Instagram.module.css";
+import footersection from "@/styles/Footer.module.css";
 
 import Productcard from "@/components/Productcard";
 import Brands from "@/components/Brands";
@@ -112,8 +114,73 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.instagramsection}></section>
-      <footer>asdasd</footer>
+      <section className={styles.instagramsection}>
+        <div className={styles.title}>INSTAGRAM</div>
+        <div className={instagramsection.images}>
+          <div>
+            <img src="assets/in2.jpg" alt="image"></img>
+          </div>
+          <div>
+            <img src="assets/in1.jpg" alt="image"></img>
+          </div>
+          <div>
+            <img src="assets/in3.jpg" alt="image"></img>
+          </div>
+        </div>
+        <a className={styles.explore} href="#">
+          INSTAGRAM ⟶{" "}
+        </a>
+      </section>
+      <footer className={styles.footersection}>
+        <div className={footersection.footer}>
+          <div className={footersection.flex}>
+            <div className={footersection.logo}>spex.</div>
+            <div>c 2021 spex</div>
+          </div>
+          <div className={footersection.flex}>
+            <div className={footersection.title}>ABOUT US</div>
+            <div>
+              <a>SHOPS</a>
+            </div>
+            <div>
+              <a>VACANCIES</a>
+            </div>
+            <div>
+              <a>STERMS OF USE</a>
+            </div>
+          </div>
+          <div className={footersection.flex}>
+            <div className={footersection.title}>SERVICES</div>
+            <div>
+              <a>PAYMENT AND DELIVERY</a>
+            </div>
+            <div>
+              <a>RETURN AND EXCHANGE</a>
+            </div>
+            <div>
+              <a>FAQ</a>
+            </div>
+            <div>
+              <a>CONTACTS</a>
+            </div>
+            <div>
+              <a>HELP</a>
+            </div>
+          </div>
+          <div className={footersection.flex}>
+            <div className={footersection.title}>
+              LEARN ABOUT SPECIAL OFFERS
+            </div>
+            <div className={footersection.form}>
+              <form>
+                <input type="email" placeholder="Email"></input>
+                <button type="submit">OK</button>
+              </form>
+            </div>
+            <div className={footersection.medias}>a b c</div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
