@@ -60,3 +60,18 @@
   padding-top: 12rem;
   padding-inline: 5rem;
 }
+.findussection {
+  padding-top: 12rem;
+  padding-inline: 5rem;
+  display: flex;
+}
+.findussection div {
+  flex: 1;
+}
+.findussection img {
+  width: 100%;
+}
+.findussection .title {
+  padding-inline: 2rem;
+  padding-block: 2rem;
+}

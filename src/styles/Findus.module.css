@@ -1,0 +1,19 @@
+.buttons {
+  padding-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 12rem;
+  gap: 1rem;
+}
+.buttons button {
+  font-family: arial-monospace;
+  font-size: 1.2rem;
+  padding-block: 1rem;
+  padding-inline: 1.2rem;
+  background-color: #eaeaea;
+  border: none;
+  cursor: pointer;
+  width: 15rem;
+  display: flex;
+  justify-content: space-around;
+}
