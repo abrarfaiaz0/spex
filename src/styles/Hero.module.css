@@ -1,26 +1,32 @@
+.nav a {
+  all: unset;
+  cursor: pointer;
+}
 .herotitle {
   font-size: 6rem;
   font-family: arial-monospace;
   color: white;
   position: relative;
 }
-.menubutton {
-  justify-self: flex-start;
-}
+
 .logo {
   font-size: 3rem;
   justify-self: center;
+  margin-left: auto;
 }
 .nav {
   z-index: 4;
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 33.33%;
-  padding: 1rem 0 0 0;
+  display: flex;
+  padding: 2rem 0 0 0;
+  align-items: center;
 }
 .navright {
   display: flex;
-  justify-self: flex-end;
+  align-items: flex-end;
+}
+.navright img {
+  width: 10%;
+  filter: invert(100%);
 }
 .typography {
   z-index: 4;

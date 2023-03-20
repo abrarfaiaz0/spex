@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import newsection from "@/styles/New.module.css";
 import herosection from "@/styles/Hero.module.css";
@@ -30,10 +29,24 @@ export default function Home() {
           <div className={herosection.logo}>
             <a>spex.</a>
           </div>
-          <div className={herosection.navright}>
-            <div>a</div>
-            <div>b</div>
-            <div>cadadaddassd</div>
+
+          <div>
+            <a>
+              <img src="assets/icons/search.png" alt=""></img>
+            </a>
+          </div>
+          <div>
+            <a>
+              <img src="assets/icons/heart.png" alt=""></img>
+            </a>
+          </div>
+          <div>
+            <a>
+              <img src="assets/icons/shop.png" alt=""></img>
+            </a>
+          </div>
+          <div>
+            <a>Log In</a>
           </div>
         </nav>
         <div className={herosection.typography}>
